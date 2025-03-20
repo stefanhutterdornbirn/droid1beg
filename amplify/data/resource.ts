@@ -12,7 +12,7 @@ const schema = a.schema({
       what: a.string().required(),
       when: a.string(),
       who: a.string(),
-      whatsup: a.enum(["PLANED", "IN PROGRESS", "DONE", "POSTPONED", "OBSOLETE"]),
+      whatsup: a.enum(["PLANED", "IN_PROGRESS", "DONE", "POSTPONED", "OBSOLETE"]),
     })
     .authorization((allow) => [allow.owner()]),
 });
